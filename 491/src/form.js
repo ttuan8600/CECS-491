@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { write } from './491/src/test';
 
 const Form = () => {
     
@@ -7,7 +6,7 @@ const Form = () => {
     
     const handleSubmit = (e) => {
 
-        write({name: name}); 
+        console.log(name); 
 
     }
 
