@@ -6,6 +6,7 @@ function Form(){
     const [name, setName] = useState('');
     
     const handleSubmit = async (e) => {
+        e.preventDefault()
         let response = await axios.post(
             `http://localhost:3001/api?name=${name}&teacherId=0101`
         );
